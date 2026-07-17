@@ -3,6 +3,10 @@ import connectDB from './database/mongoDB.js';
 import router from './routes/user.route.js';
 import cors from 'cors'  // third-party imported middleware
 
+import dotenv from 'dotenv'
+dotenv.config()
+
+
 const app = express();  // here express() is object
 
 // mounting
@@ -15,7 +19,7 @@ app.use(cors({
 app.use(express.json()) // in-built middleware
 app.use(router)
 
-const port = 4000
+const port = process.env.PORT
 
 connectDB()
 
