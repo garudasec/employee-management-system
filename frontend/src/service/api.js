@@ -1,4 +1,4 @@
-const backendApiUrl = "https://employee-management-system-r9v2.onrender.com";
+const backendApiUrl = import.meta.env.VITE_BACKEND_URL;
 
 export const createuserapi = `${backendApiUrl}/createuser`;
 export const getuserapi = `${backendApiUrl}/getuser`;
