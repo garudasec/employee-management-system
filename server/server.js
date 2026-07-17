@@ -19,10 +19,14 @@ app.use(cors({
 app.use(express.json()) // in-built middleware
 app.use(router)
 
-const port = process.env.PORT
+const port = process.env.PORT || 4000
 
 connectDB()
 
+
+app.get('/', (req, res) => {
+    res.send('<h1>Welcome to the backend</h1>')
+})
 app.listen(port, ()=> {
     console.log(`Server has started on port: ${port}`)
 })
