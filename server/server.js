@@ -17,9 +17,12 @@ const app = express();  // here express() is object
 // mounting
 
 app.use(cors({
-    origin:'*',
-    methods:['GET','POST','PUT','DELETE']
-}))
+  origin: [
+    "http://localhost:5173",
+    "https://employee-management-system-virid-sigma.vercel.app"
+  ],
+  methods: ["GET", "POST", "PUT", "DELETE"]
+}));
 
 app.use(express.json()) // in-built middleware
 app.use(router)
