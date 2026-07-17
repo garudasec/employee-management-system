@@ -1,3 +1,8 @@
+import dns from 'dns';
+// Force Node.js to use reliable public DNS servers
+dns.setServers(['1.1.1.1', '8.8.8.8']); 
+
+
 import express from 'express';
 import connectDB from './database/mongoDB.js';
 import router from './routes/user.route.js';
