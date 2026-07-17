@@ -1,4 +1,4 @@
-const backendApiUrl = "http://localhost:4000";
+const backendApiUrl = "https://employee-management-system-r9v2.onrender.com";
 
 export const createuserapi = `${backendApiUrl}/createuser`;
 export const getuserapi = `${backendApiUrl}/getuser`;
