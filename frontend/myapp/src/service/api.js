@@ -1,11 +1,6 @@
-const backendApiUrl = 'http://https://employee-management-system-ajxv.onrender.com:4000'
+const backendApiUrl = "https://employee-management-system-ajxv.onrender.com";
 
-const createuserapi = `${backendApiUrl}/createuser`
-
-const getuserapi = `${backendApiUrl}/getuser`
-
-const updateuserapi = `${backendApiUrl}/updateuser`
-
-const deleteuserapi = `${backendApiUrl}/deleteuser`
-
-export {createuserapi, getuserapi, updateuserapi, deleteuserapi}
+export const createuserapi = `${backendApiUrl}/createuser`;
+export const getuserapi = `${backendApiUrl}/getuser`;
+export const updateuserapi = `${backendApiUrl}/updateuser`;
+export const deleteuserapi = `${backendApiUrl}/deleteuser`;
