@@ -14,7 +14,7 @@ const app = express();  // here express() is object
 app.use(cors({
   origin: [
     "http://localhost:5173",
-    "https://employee-management-system-fawn-sigma.vercel.app/"
+    "https://employee-management-system-fawn-sigma.vercel.app"
   ],
   methods: ["GET", "POST", "PUT", "DELETE"]
 }));
